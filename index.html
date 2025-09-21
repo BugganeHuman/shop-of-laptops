@@ -8,13 +8,14 @@
   </head>
   <body>
     <main id="main">
-      <div id="result"></div>
+      <div id="result">0</div>
       <button class="symbols" id="symbol-/">/</button>
       <button class="symbols" id="symbol-*">×</button>
       <button class="symbols" id="symbol-=">=</button><br />
       <button class="numbers" id="number-7">7</button>
       <button class="numbers" id="number-8">8</button>
-      <button class="numbers" id="number-9">9</button> <br />
+      <button class="numbers" id="number-9">9</button>
+      <button class="symbols" id="symbol-del">del</button> <br />
       <button class="numbers" id="number-4">4</button>
       <button class="numbers" id="number-5">5</button>
       <button class="numbers" id="number-6">6</button> <br />
@@ -31,6 +32,7 @@
       const symbol_of_multiply = document.getElementById("symbol-*");
       const symbol_of_plus = document.getElementById("symbol-+");
       const symbol_of_minus = document.getElementById("symbol--");
+      const symbol_of_del = document.getElementById("symbol-del");
       const number0 = document.getElementById("number-0");
       const number1 = document.getElementById("number-1");
       const number2 = document.getElementById("number-2");
@@ -83,6 +85,9 @@
       });
       number9.addEventListener("click", () => {
         result.textContent += "9";
+      });
+      symbol_of_del.addEventListener("click", () => {
+        result.textContent = "0";
       });
     </script>
   </body>
