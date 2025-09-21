@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="result"></div>
-    <br />
     <main id="main">
+      <div id="result"></div>
       <button class="symbols" id="symbol-/">/</button>
       <button class="symbols" id="symbol-*">×</button>
       <button class="symbols" id="symbol-=">=</button><br />
       <button class="numbers" id="number-7">7</button>
-      <button class="numbers" id="number-7">8</button>
-      <button class="numbers" id="number-7">9</button> <br />
+      <button class="numbers" id="number-8">8</button>
+      <button class="numbers" id="number-9">9</button> <br />
       <button class="numbers" id="number-4">4</button>
       <button class="numbers" id="number-5">5</button>
       <button class="numbers" id="number-6">6</button> <br />
@@ -26,5 +25,65 @@
       <button class="symbols" id="symbol--">-</button>
       <button class="symbols" id="symbol-+">+</button>
     </main>
+    <script>
+      let result = document.getElementById("result");
+      const symbol_of_div = document.getElementById("symbol-/");
+      const symbol_of_multiply = document.getElementById("symbol-*");
+      const symbol_of_plus = document.getElementById("symbol-+");
+      const symbol_of_minus = document.getElementById("symbol--");
+      const number0 = document.getElementById("number-0");
+      const number1 = document.getElementById("number-1");
+      const number2 = document.getElementById("number-2");
+      const number3 = document.getElementById("number-3");
+      const number4 = document.getElementById("number-4");
+      const number5 = document.getElementById("number-5");
+      const number6 = document.getElementById("number-6");
+      const number7 = document.getElementById("number-7");
+      const number8 = document.getElementById("number-8");
+      const number9 = document.getElementById("number-9");
+
+      symbol_of_div.addEventListener("click", () => {
+        result.textContent += "/";
+      });
+      symbol_of_multiply.addEventListener("click", () => {
+        result.textContent += "*";
+      });
+      symbol_of_plus.addEventListener("click", () => {
+        result.textContent += "+";
+      });
+      symbol_of_minus.addEventListener("click", () => {
+        result.textContent += "-";
+      });
+      number0.addEventListener("click", () => {
+        result.textContent += "0";
+      });
+      number1.addEventListener("click", () => {
+        result.textContent += "1";
+      });
+      number2.addEventListener("click", () => {
+        result.textContent += "2";
+      });
+      number3.addEventListener("click", () => {
+        result.textContent += "3";
+      });
+      number4.addEventListener("click", () => {
+        result.textContent += "4";
+      });
+      number5.addEventListener("click", () => {
+        result.textContent += "5";
+      });
+      number6.addEventListener("click", () => {
+        result.textContent += "6";
+      });
+      number7.addEventListener("click", () => {
+        result.textContent += "7";
+      });
+      number8.addEventListener("click", () => {
+        result.textContent += "8";
+      });
+      number9.addEventListener("click", () => {
+        result.textContent += "9";
+      });
+    </script>
   </body>
 </html>
